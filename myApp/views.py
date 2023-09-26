@@ -7,6 +7,6 @@ def home(request):
     return HttpResponse("welcome to HomePage")
 
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def index(request):
     return render(request, "myApp/index.html")
